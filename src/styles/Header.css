@@ -118,3 +118,127 @@
     cursor: pointer;
     color: #F9FAFB;
 }
+
+
+
+/* Базовые стили */
+.calculate {
+    width: 756px;
+    height: 584px;
+    margin: 0 auto;
+  }
+  
+  .calculate__container {
+    width: 80%;
+    background-color: #F9FAFB;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .calculate__header {
+    margin-bottom: 20px;
+  }
+  
+  .calculate__form {
+    width: 496px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Отступ между полями */
+  }
+  
+  .form-field input {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  .btn_calculate {
+    height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    color: #F9FAFB;
+    background: #8B5CF6;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
+  
+  /* Медиа-запросы для адаптивности */
+  @media (max-width: 768px) {
+    .calculate {
+      width: 90%;
+    }
+  
+    .calculate__form {
+      width: 100%;
+    }
+  
+    .form-field input {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .calculate {
+      width: 100%;
+    }
+  
+    .calculate__form {
+      width: 100%;
+    }
+  
+    .form-field input {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .btn_calculate {
+      font-size: 14px;
+    }
+  }
+  
+  /* Стили для модального окна */
+  .modal {
+    display: block; /* Показывать модальное окно */
+    position: fixed; /* Фиксировать положение */
+    z-index: 1; /* Установить индекс z для модального окна */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); /* Полупрозрачный фон */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Автоматическое центрирование */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

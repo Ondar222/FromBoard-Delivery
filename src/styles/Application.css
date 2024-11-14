@@ -1,0 +1,104 @@
+.application {
+    width: 756px;
+    height: 584px;
+    margin: 0 auto;
+}
+
+.application__container {
+    width: 80%;
+    background-color: #F9FAFB;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.application__header {
+    margin-bottom: 20px;
+}
+
+.application__form {
+    width: 496px;
+    margin: 0 auto;
+}
+
+.form-field {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.form-field input {
+    width: 45%;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.btn_calculate {
+    height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    color: #F9FAFB;
+    background: #8B5CF6;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+/* Стили для средних устройств (планшеты) */
+@media (max-width: 768px) {
+    .calculate {
+        width: 90% !important;
+        /* Занимает 90% ширины экрана */
+    }
+
+    .calculate__form {
+        width: 100% !important;
+        /* Занимает всю ширину */
+    }
+
+    .form-field {
+        flex-direction: column !important;
+        /* Поля располагаются вертикально */
+    }
+
+    .form-field input {
+        width: 100% !important;
+        /* Занимают всю ширину */
+    }
+}
+
+/* Стили для маленьких устройств (мобильные телефоны) */
+@media (max-width: 480px) {
+    .calculate {
+        width: 100% !important;
+        /* Занимает всю ширину */
+    }
+
+    .calculate__form {
+        width: 100% !important;
+        /* Занимает всю ширину */
+    }
+
+    .form-field input {
+        font-size: 14px !important;
+        /* Уменьшаем размер шрифта */
+        padding: 8px 16px !important;
+        /* Уменьшаем отступы */
+    }
+
+    .btn_calculate {
+        font-size: 14px !important;
+        /* Уменьшаем размер шрифта */
+    }
+}

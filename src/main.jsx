@@ -6,6 +6,7 @@ import './styles/News.css'
 import './styles/Calculate.css'
 import './styles/Advantages.css'
 import './styles/Guarantee.css'
+import './styles/Application.css'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
