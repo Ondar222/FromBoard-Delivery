@@ -1,0 +1,20 @@
+/* html {
+  overflow-x: none;
+}
+
+body {
+  max-width: 1920px !important;
+  background-color: #E5E7EB;
+}
+
+ */
+
+ html {
+  /* overflow-x: hidden; Отключаем горизонтальный скролл */
+}
+
+body {
+  max-width: 1440px; /* Ширина экрана под ноутбуки */
+  margin: 0 auto; /* Выравнивание по центру */
+  background-color: #E5E7EB;
+}

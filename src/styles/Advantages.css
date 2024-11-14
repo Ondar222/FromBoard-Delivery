@@ -1,0 +1,33 @@
+.advantages {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ width: 100%;
+ margin: 0 auto;
+}
+
+.advantages h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    color: #111827;
+}
+
+.advantages__top__bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.advantages__bottom__bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
